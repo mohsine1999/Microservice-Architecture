@@ -8,9 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-note" />
+        <module name="service-inscription" />
         <module name="StudentManagement" />
         <module name="config-service" />
         <module name="service-gateway" />
+        <module name="discovryServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,7 +24,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="StudentManagement" options="-parameters" />
       <module name="config-service" options="-parameters" />
+      <module name="discovryServer" options="-parameters" />
       <module name="service-gateway" options="-parameters" />
+      <module name="service-inscription" options="-parameters" />
       <module name="service-note" options="-parameters" />
     </option>
   </component>
