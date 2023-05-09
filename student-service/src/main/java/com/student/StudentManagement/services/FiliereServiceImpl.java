@@ -35,7 +35,9 @@ public class FiliereServiceImpl implements FiliereService {
         List<Filiere> filieres = filierRepository.findAll();
         List<RespenseFiliereDto> respenseFiliereDtos = new ArrayList<>();
         for (Filiere i : filieres) {
-            RespenseFiliereDto response = RespenseFiliereDto.builder().name(i.getName())
+            RespenseFiliereDto response = RespenseFiliereDto.builder()
+                    .id(i.getId())
+                    .name(i.getName())
                     .modules(i.getModules())
                     .build();
             respenseFiliereDtos.add(response);
