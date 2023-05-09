@@ -8,8 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-note" />
-        <module name="service-inscription" />
-        <module name="StudentManagement" />
         <module name="config-service" />
         <module name="service-gateway" />
         <module name="discovryServer" />
@@ -17,6 +15,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="customer" target="17" />
+      <module name="service-inscription" target="17" />
+      <module name="StudentManagement" target="17" />
       <module name="test" target="17" />
     </bytecodeTargetLevel>
   </component>
